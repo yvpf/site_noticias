@@ -1,0 +1,33 @@
+Pastas/Folders
+
+node_modules -> (oriundo do npm init / Recebe novos modulos instalados)
+app -> Recebe as pastas (models / routes / views)
+config -> recebe os arquivos (server.js / dbConnection)
+
+
+******************************************************************************************************************************************
+Arquivo app.js == 
+
+Cria-se uma variavel 'app' fazendo require das configurações setadas em config/server.js
+
+app.listen -> colocamos o número da porta a ser usada no localhost
+
+******************************************************************************************************************************************
+config/server.js :
+
+Criamos a variável 'express' com require para express; (modulo npm)
+Criamos a variável 'consign' com require para consign; (modulo npm)
+
+Criamos a variavel app (var app = express();) / Set 'view engine' para 'ejs' / Set 'views' para './app/views';
+
+Utilizamos o consign() para incluir a pasta de rotas 
+
+
+******************************************************************************************************************************************
+app/models:
+
+No arquivo noticiasModel.js exportamos uma função com funções de query contidas dentro
+
+******************************************************************************************************************************************
+app
+
